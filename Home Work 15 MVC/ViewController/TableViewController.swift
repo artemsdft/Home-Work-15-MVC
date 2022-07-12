@@ -43,10 +43,12 @@ class TableViewController: UIViewController, UITableViewDelegate {
             let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifire, for: indexPath) as? TableViewCell
             cell?.configure(whith: cellModel)
             cell?.accessoryType = .disclosureIndicator
+            
             if indexPath.section == 1 && indexPath.row == 0 {
                 let switchView = UISwitch()
                 cell?.accessoryView = switchView
             }
+            
             if indexPath.row == 0 && indexPath.section == 0 {
                 var content = cell?.defaultContentConfiguration()
                 content?.image = UIImage(named: "avatar")
