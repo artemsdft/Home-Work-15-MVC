@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1795663F287D6DE6000DC35C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795663E287D6DE6000DC35C /* AppDelegate.swift */; };
-		17956641287D6DE6000DC35C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17956640287D6DE6000DC35C /* SceneDelegate.swift */; };
-		17956643287D6DE6000DC35C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17956642287D6DE6000DC35C /* ViewController.swift */; };
 		17956646287D6DE6000DC35C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17956644287D6DE6000DC35C /* Main.storyboard */; };
 		17956648287D6DE9000DC35C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17956647287D6DE9000DC35C /* Assets.xcassets */; };
 		1795664B287D6DE9000DC35C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17956649287D6DE9000DC35C /* LaunchScreen.storyboard */; };
+		17956658287D90BE000DC35C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17956657287D90BE000DC35C /* Model.swift */; };
+		1795665A287D9539000DC35C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17956659287D9539000DC35C /* TableViewCell.swift */; };
+		1795665C287D9709000DC35C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795665B287D9709000DC35C /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1795663B287D6DE6000DC35C /* Home Work 15 MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home Work 15 MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1795663E287D6DE6000DC35C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17956640287D6DE6000DC35C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		17956642287D6DE6000DC35C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17956645287D6DE6000DC35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17956647287D6DE9000DC35C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1795664A287D6DE9000DC35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1795664C287D6DE9000DC35C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17956657287D90BE000DC35C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		17956659287D9539000DC35C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		1795665B287D9709000DC35C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		1795663D287D6DE6000DC35C /* Home Work 15 MVC */ = {
 			isa = PBXGroup;
 			children = (
-				1795663E287D6DE6000DC35C /* AppDelegate.swift */,
-				17956640287D6DE6000DC35C /* SceneDelegate.swift */,
-				17956642287D6DE6000DC35C /* ViewController.swift */,
-				17956644287D6DE6000DC35C /* Main.storyboard */,
-				17956647287D6DE9000DC35C /* Assets.xcassets */,
-				17956649287D6DE9000DC35C /* LaunchScreen.storyboard */,
-				1795664C287D6DE9000DC35C /* Info.plist */,
+				17956653287D8F76000DC35C /* App */,
+				17956654287D8F8B000DC35C /* Model */,
+				17956655287D8F99000DC35C /* View */,
+				17956656287D8FAB000DC35C /* ViewController */,
+				17956652287D8F4F000DC35C /* Resources */,
 			);
 			path = "Home Work 15 MVC";
+			sourceTree = "<group>";
+		};
+		17956652287D8F4F000DC35C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1795664C287D6DE9000DC35C /* Info.plist */,
+				17956649287D6DE9000DC35C /* LaunchScreen.storyboard */,
+				17956647287D6DE9000DC35C /* Assets.xcassets */,
+				17956644287D6DE6000DC35C /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		17956653287D8F76000DC35C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1795663E287D6DE6000DC35C /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		17956654287D8F8B000DC35C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17956657287D90BE000DC35C /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17956655287D8F99000DC35C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17956659287D9539000DC35C /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17956656287D8FAB000DC35C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1795665B287D9709000DC35C /* TableViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17956643287D6DE6000DC35C /* ViewController.swift in Sources */,
+				17956658287D90BE000DC35C /* Model.swift in Sources */,
+				1795665A287D9539000DC35C /* TableViewCell.swift in Sources */,
+				1795665C287D9709000DC35C /* TableViewController.swift in Sources */,
 				1795663F287D6DE6000DC35C /* AppDelegate.swift in Sources */,
-				17956641287D6DE6000DC35C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 699KLTP85T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Home Work 15 MVC/Info.plist";
+				INFOPLIST_FILE = "Home Work 15 MVC/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 699KLTP85T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Home Work 15 MVC/Info.plist";
+				INFOPLIST_FILE = "Home Work 15 MVC/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
